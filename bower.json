@@ -1,0 +1,24 @@
+{
+  "name": "hack",
+  "version": "0.0.0",
+  "description": "T4 Wendsday Hack",
+  "authors": [
+    "Daniel",
+    "Daniel",
+    "Carl",
+    "Ludvig",
+    "Hannes och Maik"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "qunit": "~1.19.0"
+  }
+}

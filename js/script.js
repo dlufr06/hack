@@ -4,4 +4,3 @@
  * and open the template in the editor.
  */
 
-console.log("js/script.js is running..");

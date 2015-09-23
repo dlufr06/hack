@@ -9,8 +9,29 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/daniel/style.css" rel="stylesheet">
+        <link href="css/daniel/responsive.css" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     </head>
     <body>
-        <div>TODO write content</div>
+        <form name="hongkiat" id="hongkiat-form" method="post" action="daniel.html">
+            <div id="wrapping" class="clearfix">
+                <section id="aligned">
+                    <input type="text" name="name" id="name" placeholder="Namn" tabindex="1" class="txtinput">
+                    <input type="text" name="class" id="class" placeholder="Klass" tabindex="2" class="txtinput">
+                    <textarea name="message" id="message" placeholder="Anteckningar" tabindex="3" class="txtblock"></textarea>
+                </section>
+            </div>
+            
+            <button type="button" class="close" aria-label="Close"></button>
+            <a href="daniel.html" class="btn btn-success ">Skicka!</a>
+        </form>
+        <br>
+        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     </body>
 </html>

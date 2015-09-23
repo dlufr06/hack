@@ -13,23 +13,33 @@
     <body>
         <header></header> <!--Sidhuvud -->
         <article>
-          <div class="center">
-              <div class="element">
-                  <p>&lt;- Dra -&gt;</p>
-              </div>
-              <div class="element">
-                  <p>&lt;- Dra -&gt;</p>
-              </div>
-              <div class="element">
-                  <p>&lt;- Dra -&gt;</p>
-              </div>
-              <div class="element">
-                  <p>&lt;- Dra -&gt;</p>
-              </div>
-              <div class="element">
-                  <p>&lt;- Dra -&gt;</p>
-              </div>
-          </div>
+            <div class="center">
+                <div>
+                    <a id="newButton" class="active btn btn-primary" href="#">Nytt</a>
+                    <a id="oldButton" class="btn btn-primary" href="#">Gammalt</a>
+                </div>
+                <div id="newContainer">
+                    <div class="element">
+                        &lt;- Dra mig #1 -&gt;
+                    </div>
+                    <div class="element">
+                        &lt;- Dra mig #2 -&gt;
+                    </div>
+                    <div class="element">
+                        &lt;- Dra mig #3 -&gt;
+                    </div>
+                    <div class="element">
+                        &lt;- Dra mig #4 -&gt;
+                    </div>
+                    <div class="element">
+                        &lt;- Dra mig #5 -&gt;
+                    </div>
+                </div>
+                <div class="hidden" id="oldContainer">
+                    <div class="element">
+                        &lt;- Dra mig #6 -&gt;
+                    </div></div>
+            </div>
         </article>    <!--Innehåll -->
         <footer></footer>  <!--Sidfot -->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>

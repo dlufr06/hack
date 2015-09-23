@@ -9,29 +9,182 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/daniel/style.css" rel="stylesheet">
-        <link href="css/daniel/responsive.css" rel="stylesheet">
         <!-- Bootstrap -->
         <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="css/daniel/daniel.css" type="text/css"  rel="stylesheet">
+        <link href="css/daniel/style.css" type="text/css"  rel="stylesheet">
+        <link href="css/daniel/responsive.css" type="text/css" rel="stylesheet">
+
+        <style>
+            @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+            @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+            .login{
+                position: absolute;
+                top: calc(50% - 75px);
+                left: calc(50% - 50px);
+                height: 150px;
+                width: 350px;
+                padding: 10px;
+                z-index: 2;
+            }
+
+            .login input[type=text]{
+                width: 250px;
+                height: 30px;
+                background: transparent;
+                border: 1px solid rgba(255,255,255,0.6);
+                border-radius: 2px;
+                color: #fff;
+                font-family: 'Exo', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 4px;
+            }
+
+            .login input[type=password]{
+                width: 250px;
+                height: 30px;
+                background: transparent;
+                border: 1px solid rgba(255,255,255,0.6);
+                border-radius: 2px;
+                color: #fff;
+                font-family: 'Exo', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 4px;
+                margin-top: 10px;
+            }
+
+            .login input[type=button]{
+                width: 260px;
+                height: 35px;
+                background: #fff;
+                border: 1px solid #fff;
+                cursor: pointer;
+                border-radius: 2px;
+                color: #a18d6c;
+                font-family: 'Exo', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 6px;
+                margin-top: 10px;
+            }
+
+            .login input[type=button]:hover{
+                opacity: 0.8;
+            }
+
+            .login input[type=button]:active{
+                opacity: 0.6;
+            }
+
+            .login input[type=text]:focus{
+                outline: none;
+                border: 1px solid rgba(255,255,255,0.9);
+            }
+
+            .login input[type=password]:focus{
+                outline: none;
+                border: 1px solid rgba(255,255,255,0.9);
+            }
+
+            .login input[type=button]:focus{
+                outline: none;
+            }
+
+            ::-webkit-input-placeholder{
+                color: rgba(255,255,255,0.6);
+            }
+
+            ::-moz-input-placeholder{
+                color: rgba(255,255,255,0.6);
+            }
+        </style>
     </head>
     <body>
-        <form name="hongkiat" id="hongkiat-form" method="post" action="daniel.html">
-            <div id="wrapping" class="clearfix">
-                <section id="aligned">
-                    <input type="text" name="name" id="name" placeholder="Namn" tabindex="1" class="txtinput">
-                    <input type="text" name="class" id="class" placeholder="Klass" tabindex="2" class="txtinput">
-                    <textarea name="message" id="message" placeholder="Anteckningar" tabindex="3" class="txtblock"></textarea>
-                </section>
+
+            <div class="login">
+                <input type="text" placeholder="Användarnamn" name="user"><br>
+                <input type="password" placeholder="Lösenord" name="password"><br>
+                <input type="button" value="Logga in">
             </div>
             
-            <button type="button" class="close" aria-label="Close"></button>
-            <a href="daniel.html" class="btn btn-success ">Skicka!</a>
+        <form action="" class="formulär">
+            <div class="form-group has-feedback">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-user" ></span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Namn:"/>
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-education" ></span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Skola:"/>
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-paperclip" ></span>
+                    </span>
+                    <textarea id="anteckningar" class="form-control" placeholder="Anteckningar:"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="Skicka" class="btn btn-primary"/>
         </form>
+
         <br>
-        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+        <br>
+        <br>
+        <br>
+
+        <section id="container">
+            <form id="hongkiat-form" action="">
+                <div id="wrapping" class="clearfix">
+                    <section id="aligned">
+                        <input type="text" id="name" placeholder="Namn" class="txtinput form-control">
+                        <input type="text" id="class" placeholder="Klass" class="txtinput form-control">
+                        <textarea name="message" id="message" placeholder="Anteckningar" class="txtblock form-control"></textarea>
+                    </section>
+                </div>
+                <input type="submit" value="Skicka" class="btn btn-primary"/>
+            </form>
+        </section>
+
+        <footer>
+            <h3>Kontaktuppgifter</h3>
+            <table class="table">
+                <tr>
+                    <td>Teknikum</td>
+                    <td>Kalle</td>
+                    <td>Kalle@example.com</td>
+                </tr>
+                <tr>
+                    <td>Kungsmad</td>
+                    <td>Pelle</td>
+                    <td>Pelle@example.com</td>
+                </tr>
+                <tr>
+                    <td>Förskolan</td>
+                    <td>Olle</td>
+                    <td>Olle@example.com</td>
+                </tr>
+            </table>
+            <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+        </footer>
+
+
+
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="js/daniel/prefixfree.min.js"></script>
     </body>
 </html>
